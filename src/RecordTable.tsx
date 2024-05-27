@@ -138,7 +138,6 @@ const [records, setRecords] = useState<Record[]>([]);
         <Button className="mb-3 w-auto ml-custom" variant="primary" onClick={() => setShowModal(true)}>Add Record</Button>
       </Row>
       <Row>
-        <Col>
           <Table striped bordered hover>
               <thead>
               <tr>
@@ -164,7 +163,6 @@ const [records, setRecords] = useState<Record[]>([]);
               ))}
               </tbody>
           </Table>
-        </Col>
         {/* deleted records if checkbox is checked */}
       {isDeletedFilter && (
         <Col>
